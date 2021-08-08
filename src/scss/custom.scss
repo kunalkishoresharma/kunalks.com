@@ -1,0 +1,72 @@
+/* make the customizations */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+
+@import "_variables.scss";
+@import "_mixin.scss";
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+:focus {
+    outline: 0;
+}
+:focus-visible{
+    box-shadow: 0 0 0 3px $gray;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1.7;
+    background-color:$body-bg;
+    font-size: 1.8rem;
+
+}
+header{
+    background-color: var(--bs-gray-200)
+}
+.Font--XL {
+    font-size: 3rem;
+    font-weight:800;
+}
+.Font--L {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.Font--M {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.Font--S {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+@include media-breakpoint-up(xs) {
+   
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+}
+
+//max-width
+@include media-breakpoint-down(xs) {
+}
+@include media-breakpoint-down(sm) {
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(lg) {
+}
